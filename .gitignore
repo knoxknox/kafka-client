@@ -1,0 +1,12 @@
+.mvn
+.idea
+.bundle
+
+*.gem
+lib/com/*
+lib/net/*
+lib/org/*
+test/*.jar
+
+Gemfile.lock
+lib/kafka-client_jars.rb

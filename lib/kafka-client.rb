@@ -1,0 +1,7 @@
+require_relative 'kafka-client_jars'
+require_relative 'kafka-client/config'
+require_relative 'kafka-client/consumer'
+require_relative 'kafka-client/producer'
+require_relative 'kafka-client/offset_reset'
+require_relative 'kafka-client/partition_list'
+require_relative 'kafka-client/topic_inspector'
