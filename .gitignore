@@ -3,10 +3,11 @@
 .bundle
 
 *.gem
+lib/io/*
 lib/com/*
 lib/net/*
 lib/org/*
-test/*.jar
+lib/commons-cli/*
 
 Gemfile.lock
 lib/kafka-client_jars.rb
