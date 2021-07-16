@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.files = Dir['lib/**/*.rb', 'lib/**/*.jar']
 
-  s.add_development_dependency 'rake', '~> 12.3', '>= 12.3.1'
-  s.add_development_dependency 'jar-dependencies', '~> 0.3.2'
+  s.add_development_dependency 'rake', '~> 13.0', '>= 13.0.6'
+  s.add_development_dependency 'jar-dependencies', '~> 0.4.1'
 
   s.requirements << 'jar org.slf4j:slf4j-simple, ~> 1.7.25'
   s.requirements << 'jar org.apache.kafka:kafka_2.12, ~> 1.1.1'
