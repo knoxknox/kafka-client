@@ -16,8 +16,9 @@ Run `gem install kafka-client`.
 ## Integration Testing
 
 1. Run `make install` to install gem
-2. Open new tab and start consumer `make consumer_test`
-3. Open another tab and start producer `make producer_test`
+2. Run containers with `docker-compose up -d`
+3. Open new tab and start consumer `make consumer_test`
+4. Open another tab and start producer `make producer_test`
 
 Example output:
 ```
