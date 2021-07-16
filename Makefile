@@ -7,7 +7,7 @@ install:
 	gem uninstall --all kafka-client
 
 	gem build kafka-client.gemspec
-	gem install $$(find . -name kafka-client-*.gem) --no-ri --no-rdoc
+	gem install $$(find . -name kafka-client-*.gem) --no-document
 
 consumer_test:
 	jruby -J-Dorg.slf4j.simpleLogger.defaultLogLevel=INFO test/consumer.rb
