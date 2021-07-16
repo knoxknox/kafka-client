@@ -1,14 +1,8 @@
 require 'kafka-client'
 
-cid = 'ruby-kafka'
-topic = 'ruby-kafka-test-topic'
-brokers = [
-  'docker-kafka-0.local.dev:6667',
-  'docker-kafka-1.local.dev:6667',
-  'docker-kafka-2.local.dev:6667',
-  'docker-kafka-3.local.dev:6667',
-  'docker-kafka-4.local.dev:6667'
-]
+cid = 'ruby_client'
+topic = 'test_updates'
+brokers = ['localhost:9092']
 
 producer = KafkaClient::Producer.new(brokers, cid)
 

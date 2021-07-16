@@ -42,16 +42,10 @@ class Consumer < KafkaClient::Consumer
 
 end
 
-group = 'ruby-kafka'
-topic = 'ruby-kafka-test-topic'
-brokers = [
-  'docker-kafka-0.local.dev:6667',
-  'docker-kafka-1.local.dev:6667',
-  'docker-kafka-2.local.dev:6667',
-  'docker-kafka-3.local.dev:6667',
-  'docker-kafka-4.local.dev:6667'
-]
+consumer_options = {
+  'group.id' => 'ruby_client',
+  'auto.offset.reset' => 'earliest',
+  'bootstrap.servers' => 'localhost:9092'
+}
 
-Consumer.new('group.id' => group,
-  'bootstrap.servers' => brokers.join(','),
-  'auto.offset.reset' => 'earliest').consume(topic)
+Consumer.new(consumer_options).consume('test_updates')
