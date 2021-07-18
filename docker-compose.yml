@@ -8,7 +8,7 @@ services:
       - kafkadata:/data
       - kafkalogs:/logs
     environment:
-      KAFKA_CREATE_TOPICS: "test_updates:1:1"
+      KAFKA_CREATE_TOPICS: "test_updates:2:1"
 
 volumes:
   kafkadata: {}
